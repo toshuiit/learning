@@ -11,3 +11,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable wazuh-agent
 sudo systemctl start wazuh-agent
 ```
+## Wazuh Change Password
+```
+bash wazuh-passwords-tool.sh -a
+```
+
+
