@@ -1,3 +1,4 @@
+## Download wazuh installation script
 ```
 curl -sO https://packages.wazuh.com/4.5/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
 ```
