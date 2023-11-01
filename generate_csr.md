@@ -1,1 +1,0 @@
- openssl req -new -newkey rsa:2048 -keyout private.key -out march_2023.csr
