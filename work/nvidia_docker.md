@@ -1,4 +1,4 @@
-Configure NVIDIA DOCKER on Ubuntu 22.04
+## Configure NVIDIA DOCKER on Ubuntu 22.04
 ```
 apt-get update
 apt-get install ca-certificates curl gnupg lsb-release
