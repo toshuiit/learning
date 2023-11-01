@@ -1,4 +1,4 @@
-GRAFANA AS DOCKER CONTAINER
+## Create grafana docker container
 ```
 docker volume create grafana-data
 ```
