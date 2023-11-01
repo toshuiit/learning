@@ -1,6 +1,7 @@
-PROMETHEUS AS DOCKER CONTAINER
+## Prometheus as Docker container
 On Prometheus Container Side
 sudo vim /data/prometheus/prometheus.yml
+
 # my global config
 global:
  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
@@ -44,5 +45,7 @@ scrape_configs:
  target_label: instance
  - target_label: __address__
  replacement: 172.27.96.183:9116
-docker run -d --name=prometheus -p 9090:9090 -v /data/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml 
-prom/prometheus --config.file=/data/prometheus/prometheus.yml
+
+```
+docker run -d --name=prometheus -p 9090:9090 -v /data/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus --config.file=/data/prometheus/prometheus.yml
+```
