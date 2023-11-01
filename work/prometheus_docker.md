@@ -1,5 +1,5 @@
 ## Prometheus as Docker container
-On Prometheus Container Side
+
 sudo vim /data/prometheus/prometheus.yml
 ```
 # my global config
