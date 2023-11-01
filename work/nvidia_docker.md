@@ -25,8 +25,12 @@ sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-
 sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
 apt-get update
 apt-get install -y nvidia-docker2
+```
+```
 systemctl restart docker
 cd /etc/docker/
+```
+```
 vim daemon.json and add following lines.
 {
  "runtimes": {
@@ -37,6 +41,8 @@ vim daemon.json and add following lines.
  },
  "bip": "192.168.1.1/24"
 }
+```
+```
 systemctl daemon-reload
 systemctl restart docker
 ufw default deny incoming
@@ -45,3 +51,4 @@ ufw allow ssh
 ufw enable
 ufw allow from 172.27.96.114 to any port 2375
 ufw enable
+```
