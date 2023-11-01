@@ -16,7 +16,7 @@ sudo mv node_exporter-0.18.1.linux-amd64/node_exporter /usr/local/bin/
 sudo useradd -rs /bin/false node_exporter
 ```
 ## Now create a file to run node_exporter as a service
-
+```
 sudo vim /etc/systemd/system/node_exporter.service
 [Unit]
 Description=Node Exporter
@@ -28,6 +28,7 @@ Type=simple
 ExecStart=/usr/local/bin/node_exporter
 [Install]
 WantedBy=multi-user.target
+```
 ```
 sudo systemctl daemon-reload
 sudo systemctl start node_exporter
