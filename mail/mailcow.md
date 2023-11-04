@@ -1,7 +1,7 @@
 ## DNS Preparation for mailcow
 
 domain: example.iitk.ac.in  
-set hostname of server to mail.example.iitk.ac.in  
+Set hostname of server to mail.example.iitk.ac.in  
 Add A record for mail.example.iitk.ac.in in DNS  
 Add MX record for domain example.iitk.ac.in to mail.example.iitk.ac.in  
 CNAME record for the subdomains "autodiscover" as well as "autoconfig" and destination must point to mail.example.iitk.ac.in  
