@@ -106,5 +106,6 @@ Credentials: admin/moohoo
 * An update script in your mailcow-dockerized directory will take care of updates.
 
 * Run the update script in case you need to update:
-
+```
 ./update.sh
+```
