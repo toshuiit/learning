@@ -8,6 +8,27 @@
 * Add an TXT record for your domain and set the value to "v=spf1 mx ~all", to allow the server specified in the MX record (the mail server where Mailcow will be installed) to send e-mails with your domain as the sender domain.  
 * Now define the PTR record for mail.example.iitk.ac.in
 
+## Update packages
+```
+apt update -y && apt upgrade -y
+apt dist-upgrade -y
+```
+
+## To secure system from brute force attacks
+```
+apt install fail2ban -y 
+```
+
+## Install firewall
+```
+apt install ufw -y
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow 22,25,80,110,143,443,465,587,993,995,4190/tcp
+systemctl enable ufw
+systemctl restart ufw
+```
+
 ## Install mailcow
 ```
 apt update
