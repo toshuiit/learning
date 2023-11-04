@@ -81,10 +81,10 @@ docker-compose restart nginx-mailcow
 ## Open URL
 https://mail.example.iitk.ac.in
 Credentials: admin/moohoo
-Go to System --> Configuration and change password
+* Go to System --> Configuration and change password
 
-An update script in your mailcow-dockerized directory will take care of updates.
+* An update script in your mailcow-dockerized directory will take care of updates.
 
-Run the update script in case you need to update:
+* Run the update script in case you need to update:
 
 ./update.sh
