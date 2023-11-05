@@ -98,6 +98,10 @@ server {
 ```
 docker-compose restart nginx-mailcow
 ```
+## To down all containers at once
+```
+docker-compose down
+```
 ## Open URL
 https://mail.example.iitk.ac.in
 Credentials: admin/moohoo
