@@ -1,4 +1,4 @@
-## Create portainer docker container with SSL enabled
+## Create portainer docker container
 ```
 docker run -d -p 8000:8000 -p 443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /etc/ssl/certs/portainer:/certs -v /data/portainer:/data portainer/portainer-ce:latest --ssl --sslcert /certs/fullchain.pem --sslkey /certs/privkey.pem
 ```
@@ -16,8 +16,4 @@ systemctl daemon-reload
 ## Restart docker:
 ```
  systemctl restart docker.service
-```
-## Create portainer docker without SSL
-```
-docker run -d -p 8000:8000 -p 9000:9000 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /data/portainer:/data portainer/portainer-ce:latest
 ```
