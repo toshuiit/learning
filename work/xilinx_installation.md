@@ -21,7 +21,7 @@ udevadm control --reload-rules
 ```
 ## Copy license file
 ```
-cp /home/cse/Downloads/Xilinx.lic /opt/Xilinx/14.7/ISE_DS/ISE/coregen/core_licenses
+cp /home/cse/Xilinx.lic /opt/Xilinx/14.7/ISE_DS/ISE/coregen/core_licenses
 ```
 ## Add following lines in .bashrc
 vim /home/cse/.bashrc
