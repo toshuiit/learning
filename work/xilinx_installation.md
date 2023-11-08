@@ -5,7 +5,7 @@ Untar the tar first
 cd /home/cse
 tar -xvf Xilinx_ISE_DS_Lin_14.7_1015_1.tar
 cd Xilinx_ISE_DS_Lin_14.7_1015_1/
-.xsetup (Run in Graphical mode), Select WebPack Version and uncheck Cable driver option.
+./xsetup (Run in Graphical mode), Select WebPack Version and uncheck Cable driver option.
 ```
 ## Install dependencies
 ```
