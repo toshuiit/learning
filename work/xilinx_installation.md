@@ -1,4 +1,7 @@
-
+## Install dependencies
+```
+apt install libncurses5 make gitk git-gui libusb-dev build-essential libc6-dev-i386 fxload
+```
 ## Install Xilinx on Ubuntu 22.04
 Untar the tar first
 ```
@@ -7,10 +10,7 @@ tar -xvf Xilinx_ISE_DS_Lin_14.7_1015_1.tar
 cd Xilinx_ISE_DS_Lin_14.7_1015_1/
 ./xsetup (Run in Graphical mode), Select WebPack Version and uncheck Cable driver option during installation.
 ```
-## Install dependencies
-```
-apt install libncurses5 make gitk git-gui libusb-dev build-essential libc6-dev-i386 fxload
-```
+## Download usb cable driver
 ```
 cd /opt/Xilinx/
 git clone git://git.zerfleddert.de/usb-driver
