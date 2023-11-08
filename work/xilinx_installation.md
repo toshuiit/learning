@@ -1,7 +1,13 @@
+
 ## Install Xilinx on Ubuntu 22.04
+Untar the tar first
 ```
+cd /home/cse
 tar -xvf Xilinx_ISE_DS_Lin_14.7_1015_1.tar
+cd Xilinx_ISE_DS_Lin_14.7_1015_1/
+.xsetup (Run in Graphical mode), Select WebPack Version and uncheck Cable driver option.
 ```
+## Install dependencies
 ```
 apt install libncurses5 make gitk git-gui libusb-dev build-essential libc6-dev-i386 fxload
 ```
