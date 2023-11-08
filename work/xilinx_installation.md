@@ -12,7 +12,9 @@ cd Xilinx_ISE_DS_Lin_14.7_1015_1/
 apt install libncurses5 make gitk git-gui libusb-dev build-essential libc6-dev-i386 fxload
 ```
 ```
-cd /opt/Xilinx
+cd /opt/Xilinx/
+git clone git://git.zerfleddert.de/usb-driver
+cd usb-driver/
 make
 ./setup_pcusb /opt/Xilinx/14.7/ISE_DS/ISE
 udevadm control --reload-rules
