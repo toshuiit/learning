@@ -1,3 +1,8 @@
+## Scp
+```
+scp cse@hostname:/home/cse/Xilinx_ISE_DS_Lin_14.7_1015_1.tar .
+```
+
 ## Install dependencies
 ```
 apt install libncurses5 make gitk git-gui libusb-dev build-essential libc6-dev-i386 fxload
