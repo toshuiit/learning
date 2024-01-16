@@ -28,10 +28,12 @@ udevadm control --reload-rules
 ```
 cp /home/cse/Xilinx.lic /opt/Xilinx/14.7/ISE_DS/ISE/coregen/core_licenses
 ```
-## Add following lines in .bashrc
+## Add following lines in .bashrc or every user has need to enter this in their .bashrc
 vim /home/cse/.bashrc
 ```
 export PATH=$PATH:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/
 export LD_PRELOAD=/opt/Xilinx/usb-driver/libusb-driver.so
-impact
 ```
+
+## How to open ISE
+Now just open the terminal and write ise in terminal
