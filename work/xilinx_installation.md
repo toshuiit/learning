@@ -1,4 +1,4 @@
-## NOTE: HERE MY USERNAME IS cse, please change paths according to your local machine home directories.
+## NOTE: Here my username is cse, please change paths according to your local machine home directories.
 ## Download Xilinx_ISE_DS_Lin_14.7_1015_1 (tar) and Xilinx (License) from the given link
 ```
 https://kendra.cse.iitk.ac.in/kendra/CS220L.php
