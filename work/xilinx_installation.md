@@ -1,8 +1,8 @@
-## Scp
+## NOTE: HERE MY USERNAME IS cse, please change paths according to your local machine home directories.
+## Download Xilinx_ISE_DS_Lin_14.7_1015_1 (tar) and Xilinx (License) from the given link
 ```
-scp cse@hostname:/home/cse/Xilinx_ISE_DS_Lin_14.7_1015_1.tar .
+https://kendra.cse.iitk.ac.in/kendra/CS220L.php
 ```
-
 ## Install dependencies
 ```
 apt install libncurses5 make gitk git-gui libusb-dev build-essential libc6-dev-i386 fxload
@@ -10,7 +10,6 @@ apt install libncurses5 make gitk git-gui libusb-dev build-essential libc6-dev-i
 ## Install Xilinx on Ubuntu 22.04
 Untar the tar first
 ```
-cd /home/cse
 tar -xvf Xilinx_ISE_DS_Lin_14.7_1015_1.tar
 cd Xilinx_ISE_DS_Lin_14.7_1015_1/
 ./xsetup (Run in Graphical mode), Select WebPack Version and uncheck Cable driver option during installation.
