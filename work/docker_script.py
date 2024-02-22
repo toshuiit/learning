@@ -147,7 +147,7 @@ def find_and_assign_gpu(gpu_type,no_of_gpu,image_type,username,duration):
                 cursor.close()
 
         # Function to create a new container
-        def createContainer():
+def createContainer():
             clear_terminal()
             print("Let's create a new container\n")
 
@@ -190,7 +190,7 @@ def find_and_assign_gpu(gpu_type,no_of_gpu,image_type,username,duration):
                 print("\nThank You!")
 
         # Function to renew a container
-        def renewContainer():
+def renewContainer():
             clear_terminal()
             print("Let's renew a container\n")
             if connect_db.is_connected():
@@ -231,8 +231,8 @@ def find_and_assign_gpu(gpu_type,no_of_gpu,image_type,username,duration):
                     print(f"Error occurred during renewal: {e}")
                     raise
 
-        # Function to delete a container
-        def deleteContainer():
+# Function to delete a container
+def deleteContainer():
             clear_terminal()
             print("Let's delete a container\n")
             if connect_db.is_connected():
@@ -306,24 +306,24 @@ def find_and_assign_gpu(gpu_type,no_of_gpu,image_type,username,duration):
                 else:
                     print(f'Invalid container name!')
 
-        # Main menu function
-        def main_menu():
-            main_menu_choice = None
+# Main menu function
+def main_menu():
+    main_menu_choice = None
 
-            while main_menu_choice is None:
-                clear_terminal()
-                print("Docker Allocation\n\nChoose What You Want to Do:\n")
-                main_menu_choice = questionary.select(
-                    "What do you want to do?",
-                    choices=[Choice(title="Create a Conatiner", value=1), Choice(title="Delete a Container", value=2), Choice(title="Renew a container", value=3), Choice(title="Exit", value=-1), ]).ask()
+    while main_menu_choice is None:
+        clear_terminal()
+        print("Docker Allocation\n\nChoose What You Want to Do:\n")
+        main_menu_choice = questionary.select(
+        "What do you want to do?",
+        choices=[Choice(title="Create a Conatiner", value=1), Choice(title="Delete a Container", value=2), Choice(title="Renew a container", value=3), Choice(title="Exit", value=-1), ]).ask()
 
-            if main_menu_choice == 1:
-                createContainer()
-            elif main_menu_choice == 2:
+        if main_menu_choice == 1:
+            createContainer()
+        elif main_menu_choice == 2:
                 deleteContainer()
-            elif main_menu_choice == 3:
+        elif main_menu_choice == 3:
                 renewContainer()
-            elif main_menu_choice == -1:
+        elif main_menu_choice == -1:
                 print("Thank You !")
                 sys.exit()
 
