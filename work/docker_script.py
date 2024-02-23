@@ -92,11 +92,11 @@ def find_and_assign_gpu(gpu_type,no_of_gpu,image_type,username,duration):
 
         ## Creating the docker container
 
-        host = gpu_hostname+"."+"cse.iitk.ac.in"
-        password = "@LinTrix#"
+        host = gpu_hostname+"."+"domain"
+        password = "blahblahblah..."
         client = paramiko.client.SSHClient()
         client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        client.connect(host,port=22, username="admin", password=password)
+        client.connect(host,port=22, username="username", password=password)
 
         gpu_string = ','.join(map(str, card_num))
         container_name = gpu_hostname+'_'+gpu_string.replace(",","_")
